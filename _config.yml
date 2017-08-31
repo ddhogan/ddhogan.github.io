@@ -1,0 +1,21 @@
+# Site settings
+title: adventures in learning to code
+header-img: img/home-bg.png
+email: donnamcla@gmail.com
+copyright_name: ddhogan
+description: > # this means to ignore newlines until "baseurl:"
+  something short and clever
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter_username: DonnaDHogan
+github_username:  ddhogan
+learn_profile: ddhogan
+email_username: donnamcla@gmail.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
