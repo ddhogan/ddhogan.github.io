@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Why am I doing this?"
-date:   2017-09-05 04:31:20 +0000
+date:   2017-09-05 00:31:21 -0400
 ---
 
 I belong to that slice of the millennial generation that grew up around computers, but remembers when booting up the computer meant starting at the DOS prompt.  In middle school I was so good at this thing that would later be known as googling that I was selected to participate in a competitive scavenger hunt called “Cyber Surfari” (I know).  I regarded the family computer as a sort of friendly alien and delighted in trying to figure out its language through trial and error.
 
-And yet for some reason, I never considered taking the elective computer science course in high school; it just never occurred to me.  And majoring in it in college was something that I think I subconsciously discounted because I believed I lacked some prerequisite skill, like being amazing at math (when I was just pretty ok).  It seemed like it just wasn’t *meant for* someone like me, whatever that was.
+And yet for some reason, I never considered taking the elective computer science course in high school; it just never occurred to me.  And majoring in it in college was something that I think I subconsciously discounted because I believed I lacked some prerequisite skill, like being amazing at math (when I was only pretty ok).  It seemed like it wasn’t *meant for* someone like me, whatever that was.
 
 And anyway, I already had a hard enough time choosing between physics and biology (spoiler: I’d eventually end up doing both).  During my second undergrad degree I had to take an introductory programming course for science and engineering majors, which was taught with MATLAB, and I absolutely loved it.  I started using MATLAB whenever I could (when you have a hammer, eh?) and got the (second) highest grade in the class, finished the final coding project in a day, you get the idea.  But this time, I believed that since I’d already invested so much time and resources towards becoming a scientist that it was too late to think about switching again.  I love science (and still do).  I puttered about with other resources online to pick up some R and Python to help with data analysis, but never found the time to devote to getting past the “advanced beginner” stage.
 ### Plot twist
