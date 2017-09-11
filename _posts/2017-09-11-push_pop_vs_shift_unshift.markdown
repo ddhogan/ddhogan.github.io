@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "push/pop vs. shift/unshift"
-date:   2017-09-11 20:55:00 +0000
+date:   2017-09-11 16:55:01 -0400
 ---
 
 
@@ -15,4 +15,4 @@ When I was learning how to work with arrays in Ruby, the words for functions `.p
 |returns removed element| .push| .pop|
 
 
-also: `<<` (shovel) is syntactic sugar for `.push`
+ * and of course, `<<` (shovel) is syntactic sugar for `.push`
