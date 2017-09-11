@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Why am I doing this?"
+title:  "Origin story"
 date:   2017-09-05 00:31:21 -0400
 ---
 
