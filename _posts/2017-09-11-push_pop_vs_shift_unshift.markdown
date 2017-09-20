@@ -11,8 +11,8 @@ When I was learning how to work with arrays in Ruby, the words for functions `.p
 
 |   	  |beginning|end|
 |-------|:--------:|:----:|
-|adding, returns array| .unshift|.shift|
-|returns removed element| .push| .pop|
+|adding, returns array| .unshift|.push|
+|returns removed element| .shift| .pop|
 
 
  * and of course, `<<` (shovel) is syntactic sugar for `.push`
