@@ -1,12 +1,10 @@
 ---
 layout: post
 title:      "Starship LCARS!"
-date:       2017-10-12 15:22:42 +0000
+date:       2017-10-12 11:22:42 -0400
 permalink:  starship_lcars
 ---
 
-
-![LCARS Example](https://imgur.com/a/6ZrkO)
 
 For my Sinatra portfolio project, I made an app for the various ficticious intelligence agencies in the Star Trek universe, based on the database they often use, called LCARS (Library Computer Access/Retrieval System).
 
