@@ -22,3 +22,5 @@ Some small things I'm proud of in this project:
 And remember: infinite diversity in infinite combinations [<3](http://memory-alpha.wikia.com/wiki/IDIC)
 
 [Check out the repo](https://github.com/ddhogan/starship-LCARS)
+
+[Or see it in action!](https://youtu.be/1ajGLaZdd4Q)
