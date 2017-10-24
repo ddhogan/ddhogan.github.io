@@ -23,4 +23,6 @@ And remember: infinite diversity in infinite combinations [<3](http://memory-alp
 
 [Check out the repo](https://github.com/ddhogan/starship-LCARS)
 
-[Or see it in action!](https://youtu.be/1ajGLaZdd4Q)
+[Try it here](https://starship-lcars.herokuapp.com/)
+
+[Or take a tour](https://youtu.be/1ajGLaZdd4Q)
