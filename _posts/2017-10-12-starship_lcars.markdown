@@ -21,8 +21,8 @@ Some small things I'm proud of in this project:
 
 And remember: infinite diversity in infinite combinations [<3](http://memory-alpha.wikia.com/wiki/IDIC)
 
-[Check out the repo](https://github.com/ddhogan/starship-LCARS)
+[Check out the repo on GitHub](https://github.com/ddhogan/starship-LCARS)
 
-[Try it here](https://starship-lcars.herokuapp.com/)
+[Try it out, here](https://starship-lcars.herokuapp.com/) Deploying to Heroku is another part that I'm pleased to have accomplished, with the help of another [blog post](http://lucaskisabeth.com/2017/06/24/deploying_your_sqlite3_sinatra_app_to_heroku_using_postgresql/)
 
-[Or take a tour](https://youtu.be/1ajGLaZdd4Q)
+[Or watch the tour](https://youtu.be/1ajGLaZdd4Q)
