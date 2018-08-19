@@ -24,7 +24,7 @@ console.log(x);  // Causes error
 
 The function's scope includes the variable x, so that variable is only known within that function.  Trying to access it out in the global scope will throw an error because x is not a declared variable (it's not even undefined).
 
-If we move that var declaration outside the function, it'll be in the global scope, everyone knows about it, and we can access in and out of the function:
+If we move that `var` declaration outside the function, it'll be in the global scope, everyone knows about it, and we can access it within and outside of the function:
 
 ```JS
 // Example 2 (credit MDN)
@@ -92,6 +92,7 @@ function do_something() {
 ```
 
 Within this function, the declaration of `bar` is ***hoisted*** to the top of the scope, in this case, the code contained within the function `do_something()`.  So, effectively, it's executed like this:
+
 
 ```JS
 // Example 5
@@ -198,9 +199,12 @@ Explicity setting the value of `this` using `call`, `bind`, and `apply` is outsi
 
 And in a callback function, it depends on where (what scope) `this` is being called in, in accordance with the previous examples.
 
-----
+  
+
+---
 
 **References**
+
 * [Javascript’s lexical scope, hoisting and closures without mystery.](https://medium.com/@nickbalestra/javascripts-lexical-scope-hoisting-and-closures-without-mystery-c2324681d4be)
 
 * [Understanding Variables, Scope, and Hoisting in JavaScript | DigitalOcean](https://www.digitalocean.com/community/tutorials/understanding-variables-scope-hoisting-in-javascript#difference-between-var,-let,-and-const)
