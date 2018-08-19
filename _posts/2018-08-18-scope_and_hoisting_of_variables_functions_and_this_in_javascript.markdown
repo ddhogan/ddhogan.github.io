@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Scope and Hoisting of variables, functions and `this` in JavaScript"
+title:      "Scope and Hoisting of variables, functions, and `this` in JavaScript"
 date:       2018-08-18 18:58:43 -0400
 permalink:  scope_and_hoisting_of_variables_functions_and_this_in_javascript
 ---
