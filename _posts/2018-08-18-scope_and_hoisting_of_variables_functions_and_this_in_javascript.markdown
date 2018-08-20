@@ -217,12 +217,12 @@ Explicity setting the value of `this` using `call`, `bind`, and `apply` is outsi
 
 And in a callback function, it depends on where (what scope) `this` is being called in, in accordance with the previous examples.
 
----
 References
-===
-* [Javascript’s lexical scope, hoisting and closures without mystery.](https://medium.com/@nickbalestra/javascripts-lexical-scope-hoisting-and-closures-without-mystery-c2324681d4be)
-* [Understanding Variables, Scope, and Hoisting in JavaScript | DigitalOcean](https://www.digitalocean.com/community/tutorials/understanding-variables-scope-hoisting-in-javascript#difference-between-var,-let,-and-const)
+----------
+
+* [Javascript’s lexical scope, hoisting and closures without mystery](https://medium.com/@nickbalestra/javascripts-lexical-scope-hoisting-and-closures-without-mystery-c2324681d4be)
+* [Understanding Variables, Scope, and Hoisting in JavaScript ― DigitalOcean](https://www.digitalocean.com/community/tutorials/understanding-variables-scope-hoisting-in-javascript#difference-between-var,-let,-and-const)
 * [Understanding Hoisting in JavaScript ― Scotch](https://scotch.io/tutorials/understanding-hoisting-in-javascript)
-* [Hoisting - MDN Web Docs Glossary: Definitions of Web-related terms | MDN](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
-* [Scope - MDN Web Docs Glossary: Definitions of Web-related terms | MDN](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
-* [Grammar and types - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Declarations)
+* [Hoisting - MDN Web Docs Glossary: Definitions of Web-related terms](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
+* [Scope - MDN Web Docs Glossary: Definitions of Web-related terms](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
+* [Grammar and types - JavaScript MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Declarations)
