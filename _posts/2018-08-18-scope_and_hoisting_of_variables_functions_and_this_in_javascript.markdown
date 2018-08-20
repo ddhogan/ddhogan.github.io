@@ -5,10 +5,10 @@ date:       2018-08-18 18:58:43 -0400
 permalink:  scope_and_hoisting_of_variables_functions_and_this_in_javascript
 ---
 
-
 > *Blog posts and articles abound for this topic (a reference list follows) so I will attempt to highlight common pitfalls for beginner-intermediate web development students learning Javascript.*  
 
 ## Scope
+
 Although JavaScript is an interpreted language, implementation in a web development setting involves a step immediately prior to execution called lexical scoping (tokenizing), in which the interpreter skims through your code and identifies all the variables you've declared, makes a note of when they're reassigned, and delineates chunks of code into scopes in three levels: block, function, and global.
 
 ```JS
@@ -70,10 +70,13 @@ function letTest() {
 ```
 
 This is relevant because of the lexing step that happens immediately prior to executing the code, and the fact that this:
+
 ```JS
 var x = 5;
 ```
+
 is two steps listed on one line: the *declaration* of the variable x, and the *assignment* of the integer 5 to that variable. We could also write it like this:
+
 ```JS
 var x;
 x = 5;
@@ -92,7 +95,6 @@ function do_something() {
 ```
 
 Within this function, the declaration of `bar` is ***hoisted*** to the top of the scope, in this case, the code contained within the function `do_something()`.  So, effectively, it's executed like this:
-
 
 ```JS
 // Example 5
@@ -115,7 +117,9 @@ num = 6;
 console.log(num); // returns 6
 var num;
 ```
+
 and:
+
 ```JS
 // Example 7 (credit MDN)
 dogName("Watson");
@@ -128,14 +132,17 @@ function dogName(name) {
 
 In the first example, even though it looks like `var num` is declared after we assign it, from the computer's perspective, it noticed that we've declared it in the relevant scope (global), pins that to the top, and then proceeds with executing the rest of the code.  In the second example, even though we invoke/call the function before we've defined it, that definition is hoisted to the top of the scope, so by the time we actually start executing the code, the interpreter already knows what `dogName()` is.  
 For `var` variables, note that only the declaration gets hoisted, not the assignment.  So, in Example 6, writing it like this:
+
 ```JS
 console.log(num); // returns undefined
 var num = 6;
 ```
+
 returns undefined.
 **For this reason, it's often suggested to always declare variables at the top of the scope they're in, so you remember the order in which the interpreter will execute your code.**
 Alternatively, using `let` and `const` offer some protection against this behavior, since variables declared this way are not initalized with a value of 'undefined'.  So even though they're hoisted, you'll still get a reference error because they won't be initialized until they're assigned.  It's almost like they're not being hoisted at all.
 `const` has an added advantage of protecting against unexpected reassignment (although an object declared this way may still have it's properties modified), like so:
+
 ```JS
 // Example 8 (credit Digital Ocean)
 // Create a CAR object with two properties
@@ -152,8 +159,10 @@ console.log(CAR);
 // Output
 // { color: 'blue', price: 20000 }
 ```
+
 Similarly, functions follow similar rules.
 Function *declarations* are hoisted:
+
 ```JS
 // Example 9 (credit Elizabeth Mabishi at Scotch.io)
 hoisted(); // Output: "This function has been hoisted."
@@ -162,7 +171,9 @@ function hoisted() {
   console.log('This function has been hoisted.');
 };
 ```
+
 ... while function *expressions* are not:
+
 ```JS
 // Example 10 (credit Elizabeth Mabishi at Scotch.io)
 expression(); //Output: "TypeError: expression is not a function
@@ -178,6 +189,7 @@ A related topic, which I will discuss as it relates to scope and hoisting, is `t
 Gordon Zhu created a nice [cheatsheet](https://github.com/gordonmzhu/cheatsheet-js) which summarizes the corresponding lesson in his curriculum on [Watch & Code](https://watchandcode.com/).  Essentially `this` is scope dependent.
 If it's called within a regular function or just out in the wild, `this` points to `window`.
 If you're in a function being called as a method, `this` points to the object being acted upon (whatever's just to the left of the dot).  
+
 ```JS
 // Example 11 (credit Gordon Zhu)
 var myObject = {
@@ -187,7 +199,9 @@ var myObject = {
 };
 myObject.myMethod(); // --> myObject
 ```
+
 An extension of this is the case where `this` is used in a constructor as in Example 12, in which `this` refers to the instance of the class Person:
+
 ```JS
 // Example 12 (credit MDN)
 function Person(name, age) {
@@ -195,14 +209,12 @@ function Person(name, age) {
   this.age = age;
 }
 ```
+
 Explicity setting the value of `this` using `call`, `bind`, and `apply` is outside the scope (haha!) of this blogpost.
 
 And in a callback function, it depends on where (what scope) `this` is being called in, in accordance with the previous examples.
 
-  
-
 ---
-
 **References**
 
 * [Javascript’s lexical scope, hoisting and closures without mystery.](https://medium.com/@nickbalestra/javascripts-lexical-scope-hoisting-and-closures-without-mystery-c2324681d4be)
