@@ -10,7 +10,7 @@ permalink:  scope_and_hoisting_of_variables_functions_and_this_in_javascript
 ## Scope
 -----
 
-Although JavaScript is an interpreted language, implementation in a web development setting involves a step immediately prior to execution called lexical scoping (tokenizing), in which the interpreter skims through your code and identifies all the variables you've declared, makes a note of when they're reassigned, and delineates chunks of code into scopes in three levels: block, function, and global.
+Although JavaScript is an interpreted language, implementation in a web development setting involves a step immediately prior to execution called lexical scoping (tokenizing), in which the interpreter skims through your code and identifies all the variables you've declared, makes a note of when they're reassigned, and delineates chunks of code into **scopes** in three levels: block, function, and global.
 
 ~~~ JS
 // Example 1 (credit MDN)
