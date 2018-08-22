@@ -146,6 +146,7 @@ hr.small {
   /* background-size: cover; */
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   -o-background-size: cover;
   margin-bottom: 50px;
 }
