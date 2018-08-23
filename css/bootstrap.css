@@ -1528,7 +1528,7 @@ address {
   font-style: normal;
   line-height: 1.42857143;
 }
-code,
+/* code, */
 kbd,
 pre,
 samp {
