@@ -3,7 +3,8 @@ title: adventures in learning to code
 # header-img: img/home-bg.png
 header-img: img/rocks.jpg
 email: donnamcla@gmail.com
-copyright_name: ddhogan
+copyright_name: Donna Hogan
+author: Donna Hogan
 description: > # this means to ignore newlines until "baseurl:"
   something short and clever
 baseurl: "" # the subpath of your site, e.g. /blog
