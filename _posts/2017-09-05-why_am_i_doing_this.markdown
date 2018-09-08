@@ -5,7 +5,7 @@ date:   2017-09-05 00:31:21 -0400
 ---
 
 In middle school I was so good at this thing that would later be known as googling that I participated in a competitive scavenger hunt called “Cyber S*ur*fari” (I know...)  
-You could say I was into computers.
+You could say I was into computers, and in particular the :sparkles:internet:sparkles:.
 
 *And yet for some reason*, I never even considered taking the elective CS course in high school; it just never felt like a possibility **for me** specifically.  I believed I lacked a certain innate, prerequisite skill, like maybe being amazing at math (when I was only just ok).  
 It seemed like it wasn’t *meant for* someone like me, whatever that was.
