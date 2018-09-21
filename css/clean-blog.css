@@ -145,6 +145,7 @@ hr.small {
   -moz-background-size: cover;
   /* background-size: cover; */
   background-size: contain;
+  /* background-size: 100%; */
   background-repeat: no-repeat;
   background-position: center;
   -o-background-size: cover;
