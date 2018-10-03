@@ -48,7 +48,7 @@ Both `let` and `const` define local variables which are available only in the le
 ### Hoisting
 --------
 
-In the following example, x is declared with `var`, and that same variable called x is known throughout the function (even on lines which preceed it!) and in sub-blocks.  If x is declared with the newer `let` or `const`, then outer scopes don't have access to it, and if we "`let x;`" again in a sub-block, it's effectively a different variable (like how human twins separated at birth, but given the same name, are not the same person).
+In the following example, x is declared with `var`, and that same variable called x is known throughout the function (even on lines which precede it!) and in sub-blocks.  If x is declared with the newer `let` or `const`, then outer scopes don't have access to it, and if we "`let x;`" again in a sub-block, it's effectively a different variable (like how human twins separated at birth, but given the same name, are not the same person).
 
 {% highlight javascript %}
 // Example 3 (credit MDN)
