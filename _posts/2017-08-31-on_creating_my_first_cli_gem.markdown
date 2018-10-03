@@ -12,8 +12,8 @@ But, one evening I made the initial commit, and had a functioning CLI gem the ne
 
 ## Into the weeds…
 
-For example, all this time I thought I had to stay with Ruby 2.3.1 for the labs because most gems didn’t work with later versions.  But, in going “off-road”, I ran into a similar problem with Nokogiri, despite uninstalling and reinstalling, .  Several dives into Stackoverflow and github forums later, I found this gem (pardon the pun, I'll see myself out): `gem install –user-install nokogiri`.  Gems were being installed in a place ruby wasn’t expecting (or maybe rvm wasn’t expecting?)
+For example, all this time I thought I had to stay with Ruby 2.3.1 for the labs because most gems didn’t work with later versions.  But, in going “off-road”, I ran into a similar problem with Nokogiri, despite uninstalling and reinstalling, .  Several dives into Stackoverflow and github forums later, I found this gem (pardon the pun, I'll see myself out): `gem install –user-install nokogiri`.  Gems were being installed in a place ruby wasn’t expecting (or rather rvm wasn’t expecting)
 
 ## The product (approximately)
 
-My gem accepts a user’s zipcode and tells you the single closest location from each of two different popular drugstore chains in the US.  Obviously, this forces the user to willfully suspend disbelief for a few minutes and forget that the rest of the internet doesn’t exist and search engines aren’t a thing.  But I can already see how these smaller gears can fit into a larger machine with access to databases, a more intuitive UI, and more complex object models.
+My gem, called [Pharmacy-Finder](https://github.com/ddhogan/pharmacy_finder) accepts a user’s zipcode and tells you the single closest location from each of two different popular drugstore chains in the US.  Obviously, this forces the user to willfully suspend disbelief for a few minutes and forget that the rest of the internet doesn’t exist and search engines aren’t a thing.  But I can already see how these smaller gears can fit into a larger machine with access to databases, a more intuitive UI, and more complex object models.
