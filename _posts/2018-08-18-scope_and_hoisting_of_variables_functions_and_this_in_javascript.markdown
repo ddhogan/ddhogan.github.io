@@ -109,7 +109,7 @@ function do_something() {
 }
 {% endhighlight %}
 
-which is why trying to `console.log(bar)` yeilds `undefined` (we know it's a variable, it just has no value), while `console.log(foo)` throws a reference error ("a variable called 'foo'? what are you even talking about, human?")
+which is why trying to `console.log(bar)` yields `undefined` (we know it's a variable, it just has no value), while `console.log(foo)` throws a reference error ("a variable called 'foo'? what are you even talking about, human?")
 
 This makes things like this possible:
 
@@ -213,7 +213,7 @@ function Person(name, age) {
 }
 {% endhighlight %}
 
-Explicity setting the value of `this` using `call`, `bind`, and `apply` is outside the scope (haha!) of this blogpost.
+Explicitly setting the value of `this` using `call`, `bind`, and `apply` is outside the scope (haha!) of this blogpost.
 
 And in a callback function, it depends on where (what scope) `this` is being called in, in accordance with the previous examples.
 
