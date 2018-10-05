@@ -142,8 +142,8 @@ var num = 6;
 
 returns undefined.
 **For this reason, it's often suggested to always declare variables at the top of the scope they're in, so you remember the order in which the interpreter will execute your code.**
-Alternatively, using `let` and `const` offer some protection against this behavior, since variables declared this way are not initalized with a value of 'undefined'.  So even though they're hoisted, you'll still get a reference error because they won't be initialized until they're assigned.  It's almost like they're not being hoisted at all.
-`const` has an added advantage of protecting against unexpected reassignment (although an object declared this way may still have it's properties modified), like so:
+Alternatively, using `let` and `const` offer some protection against this behavior, since variables declared this way are not initialized with a value of 'undefined'.  So even though they're hoisted, you'll still get a reference error because they won't be initialized until they're assigned.  It's almost like they're not being hoisted at all.
+`const` has an added advantage of protecting against unexpected reassignment (although an object declared this way may still have its properties modified), like so:
 
 {% highlight javascript %}
 // Example 8 (credit Digital Ocean)
