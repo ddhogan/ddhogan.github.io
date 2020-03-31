@@ -18,36 +18,33 @@ I added a single HTML template (just an `<h1>` element, basically), and two post
 
 ## Bringing it to GitHub Pages
 
-`0.` After [pushing to Github](https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line), make a branch called `gh-pages` (or whatever you'd like) and go into the settings and [enable Github Pages](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+0. After [pushing to Github](https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line), make a branch called `gh-pages` (or whatever you'd like) and go into the settings and [enable Github Pages](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
-`1.` Then, back in your terminal, install the gh-pages package: `npm install gh-pages --save-dev`.
+1. Then, back in your terminal, install the gh-pages package: `npm install gh-pages --save-dev`.
 
-`2.` Because of this package's [command line utility](https://www.npmjs.com/package/gh-pages#command-line-utility), we can add this item to `package.json`: 
-```json
-"scripts": {
-    "deploy": "gh-pages -d _site"
-},
-"homepage": "/silly-eleventy-demo",
-```  
-This allows us to use the command `npm run deploy` to push to our gh-pages branch from our `_site` directory (which is effectively the build/dist), and, if our account is already mapped to a custom domain, add the repo name to the url so we still land on the correct `index.html`.
+2. Because of this package's [command line utility](https://www.npmjs.com/package/gh-pages#command-line-utility), we can add this item to `package.json`: 
+    ```json
+    "scripts": {
+        "deploy": "gh-pages -d _site"
+    },
+    "homepage": "/silly-eleventy-demo",
+    ```  
+    * This allows us to use the command `npm run deploy` to push to our gh-pages branch from our `_site` directory (which is effectively the build/dist), and, if our account is already mapped to a custom domain, add the repo name to the url so we still land on the correct `index.html`.
 
-`3.` Add this to `.eleventy.js`:
-```js
-return {
-    pathPrefix: "/silly-eleventy-demo"
-}
-```
-This gives us a handy redirect for serving up links within the project.
+3. Add this to `.eleventy.js`:
+    ```js
+    return {
+        pathPrefix: "/silly-eleventy-demo/"
+    }
+    ```
+    * Because we're aiming to publish to a sub-directory (namely, the specific repo in our domain, as described [here](https://www.11ty.dev/docs/config/#deploy-to-a-subdirectory-with-a-path-prefix)), this enables the use of Eleventy's built-in [URL filter](https://www.11ty.dev/docs/filters/url/#url-universal-filter) to prefix all urls with this path.
 
-`4.` Add the file `_data/site.json` with this:
-```json
-{
-  "pathPrefix": "/silly-eleventy-demo"
-}
-```
-Which gives us access to that variable for when we write out links in a post.
+4. Then, assuming you have a permalink (like `"myFirstPost/"`) in the [front matter](https://www.11ty.dev/docs/data-frontmatter/) of the .md or html content, make your links to it look like this:
+    ```html
+    <a href="{{ '/myFirstPost' | url }}">First Post</a>
+    or
+    <a href="{{ '/'  | url }}">Home</a>
+    ```
+    where the ` | ` is the [nunjucks pipe operator](https://mozilla.github.io/nunjucks/templating.html#filters) (this is also built-in to eleventy) and says to use the `url` filter on the string to the left of the pipe.
 
-`5.` Then, assuming you have permalinks in the front matter of the md or html content, make your links like this:
-`href="{{site.pathPrefix}}/myFirstPost/"`
-
-And finally, run `npx @11ty/eleventy` (if you haven't since your last edits, you can add the `--serve` if you want to see it live, as described in the docs) to generate the `_site` directory, and then run `npm run deploy`.  The page is ready to go at `https://{{yourGitHubName}}.github.io/{{theRepoName}}` 🎊
+And finally, run `npx @11ty/eleventy` (if you haven't since your last edits, you can add the `--serve` if you want to see it live, as described in the docs) to generate the `_site` directory, and then run `npm run deploy`.  The page is ready to go at "https://yourGitHubName.github.io/theRepoName" 🎊
