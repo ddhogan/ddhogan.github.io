@@ -1,12 +1,12 @@
 # Site settings
-title: adventures in learning to code
+title: words for humans about computers
 # header-img: img/home-bg.png
 header-img: img/rocks.jpg
 email: donnamcla@gmail.com
 copyright_name: Donna Hogan
 author: Donna Hogan
 description: > # this means to ignore newlines until "baseurl:"
-  something short and clever
+  In which I occasionally chronicle my path from scientist to software developer
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: donna_ddmh
 github_username:  ddhogan
